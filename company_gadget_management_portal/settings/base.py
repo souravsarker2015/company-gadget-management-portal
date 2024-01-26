@@ -30,7 +30,11 @@ INSTALLED_APPS = [
 
     'rest_framework',
 
+    'apps.core',
     'apps.users',
+    'apps.company',
+    'apps.employee',
+    'apps.device',
 ]
 SITE_ID = 1
 
