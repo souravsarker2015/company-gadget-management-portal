@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{#{% extends 'parent_base_sample.html' %}#}
+
+{% load static %}
+
+{% block title %}Page Title{% endblock %}
+
+{% block css %}
+    {{ block.super }}
+    <!-- Additional CSS specific to the extended template -->
+{% endblock %}
+
+{% block content %}
+    <!-- Content specific to the extended template -->
+{% endblock %}
+
+{% block scripts %}
+    {{ block.super }}
+    <!-- Additional JavaScript specific to the extended template -->
+{% endblock %}

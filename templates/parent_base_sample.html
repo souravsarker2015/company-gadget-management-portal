@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <!-- Include CSS files -->
+    {% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    {% endblock %}
+</head>
+<body>
+    <!-- Include navigation bar -->
+    {% include 'partials/navbar.html' %}
+
+    <!-- Content -->
+    <div class="container">
+        {% block content %}
+        <!-- Default content goes here -->
+        {% endblock %}
+    </div>
+
+    <!-- Include footer -->
+    {% include 'partials/footer.html' %}
+
+    <!-- Include JavaScript files -->
+    {% block scripts %}
+    <script src="{% static 'js/main.js' %}"></script>
+    {% endblock %}
+</body>
+</html>
