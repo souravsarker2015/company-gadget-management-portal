@@ -1,3 +1,4 @@
+from apps.company.models import Company
 from apps.core.models import BaseModel
 from django.db import models
 from apps.employee.utils import GENDER_CHOICES
@@ -10,11 +11,12 @@ class Employee(BaseModel):
     gender = models.CharField(max_length=100, choices=GENDER_CHOICES, blank=True, null=True)
     address = models.CharField(max_length=254, null=True, blank=True)
     date_of_birth = models.DateField(null=True, blank=True)
-    employee_id = models.CharField(max_length=20, unique=True)
+    employee_id = models.CharField(max_length=20, null=True, blank=True)
     position = models.CharField(max_length=50, null=True, blank=True)
     department = models.CharField(max_length=50, null=True, blank=True)
     hire_date = models.DateField(null=True, blank=True)
     salary = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
+    company = models.ForeignKey(Company, on_delete=models.CASCADE, null=True, blank=True)
 
     def __str__(self):
         return self.name

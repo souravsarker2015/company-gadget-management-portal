@@ -29,20 +29,7 @@ MEDIA_URL = '/media/'
 # Security settings
 SECRET_KEY = 'your-secret-key'
 
-# Additional security settings (optional)
-# ...
 
-# Email settings
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'your-smtp-host'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'your-email@example.com'
-EMAIL_HOST_PASSWORD = 'your-email-password'
-EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'your-email@example.com'
 
-# Logging configuration
-# Configure logging handlers, loggers, and formatters here
 
-# Other production-specific settings
-# ...
+

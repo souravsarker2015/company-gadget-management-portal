@@ -1,4 +1,6 @@
 from django.db import models
+
+from apps.company.models import Company
 from apps.core.models import BaseModel
 from apps.employee.models import Employee
 
@@ -14,6 +16,7 @@ class Device(BaseModel):
     purchase_date = models.DateField(null=True, blank=True)
     purchase_cost = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
     last_maintenance_date = models.DateField(blank=True, null=True)
+    company = models.ForeignKey(Company, on_delete=models.CASCADE, null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -26,9 +29,11 @@ class DeviceLog(BaseModel):
     device = models.ForeignKey(Device, on_delete=models.CASCADE, null=True, blank=True)
     assign_date = models.DateField(null=True, blank=True)
     assign_time_condition = models.TextField(blank=True, null=True)
+    is_returned = models.BooleanField(default=True)
     return_date = models.DateField(null=True, blank=True)
     return_time_condition = models.TextField(blank=True, null=True)
     employee = models.ForeignKey(Employee, on_delete=models.CASCADE, blank=True, null=True)
+    company = models.ForeignKey(Company, on_delete=models.CASCADE, null=True, blank=True)
 
     def __str__(self):
         return self.device.name

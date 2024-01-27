@@ -5,38 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9b89999-4349-4627-a286-72f5cd480241" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../company_device_management_portal/apps/company/use_cases.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../company_device_management_portal/apps/core/use_cases.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../company_device_management_portal/apps/device/api/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../company_device_management_portal/apps/device/api/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../company_device_management_portal/apps/device/api/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../company_device_management_portal/apps/device/use_cases.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../company_device_management_portal/apps/employee/api/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../company_device_management_portal/apps/employee/api/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../company_device_management_portal/apps/employee/api/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../company_device_management_portal/apps/employee/use_cases.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../company_device_management_portal/apps/users/api/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../company_device_management_portal/apps/users/api/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../company_device_management_portal/apps/users/api/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../company_device_management_portal/apps/users/use_cases.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../company_device_management_portal/company_device_management_portal/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../company_device_management_portal/company_device_management_portal/settings/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../company_device_management_portal/company_device_management_portal/settings/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../company_device_management_portal/company_device_management_portal/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../company_device_management_portal/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../company_device_management_portal/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../company_device_management_portal/.idea/dataSources/433aeb74-2907-4535-a71b-0d55c06c746d/storage_v2/_src_/schema/office_gadget.LwfdqQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../company_device_management_portal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../company_device_management_portal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../company_device_management_portal/apps/device/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../company_device_management_portal/apps/device/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../company_device_management_portal/company_gadget_management_portal/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../company_device_management_portal/apps/company/api/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../company_device_management_portal/company_gadget_management_portal/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../company_device_management_portal/company_device_management_portal/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../company_device_management_portal/company_gadget_management_portal/settings/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../company_device_management_portal/apps/company/api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../company_device_management_portal/company_gadget_management_portal/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/../company_device_management_portal/company_device_management_portal/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../company_device_management_portal/company_gadget_management_portal/settings/local.py" beforeDir="false" afterPath="$PROJECT_DIR$/../company_device_management_portal/company_device_management_portal/settings/local.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../company_device_management_portal/company_gadget_management_portal/settings/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/../company_device_management_portal/company_device_management_portal/settings/production.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../company_device_management_portal/company_gadget_management_portal/settings/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../company_device_management_portal/apps/company/api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../company_device_management_portal/company_gadget_management_portal/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../company_device_management_portal/company_gadget_management_portal/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../company_device_management_portal/company_device_management_portal/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../company_device_management_portal/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../company_device_management_portal/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/company/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/company/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/company/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/company/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/company/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/device/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/device/api/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/device/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/device/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/device/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/device/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/device/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/device/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/device/use_cases.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/device/use_cases.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/employee/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/employee/api/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/employee/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/employee/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/employee/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/employee/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/employee/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/employee/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/employee/use_cases.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/employee/use_cases.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company_device_management_portal/settings/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/company_device_management_portal/settings/production.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company_device_management_portal/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/company_device_management_portal/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,18 +53,22 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Django Server.company device management portal.executor": "Run",
     "Django Server.company gadget management portal.executor": "Run",
+    "Django Server.company_device_management_portal.executor": "Run",
+    "Django tests.Test: apps.company.tests.CompanyAPITest.test_delete_company.executor": "Run",
+    "Django tests.Test: apps.company.tests.CompanyAPITest.test_update_company.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "<unknown>",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "/home/sourov/myProjects/company_device_management_portal",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.django.DjangoModulesConfigurable",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -97,9 +85,51 @@
       <recent name="$PROJECT_DIR$/apps/company/api" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="company device management portal" type="Python.DjangoServer" factoryName="Django server">
-      <module name="auth_app" />
+  <component name="RunManager" selected="Django tests.Test: apps.company.tests.CompanyAPITest.test_delete_company">
+    <configuration name="Test: apps.company.tests.CompanyAPITest.test_delete_company" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="company_device_management_portal" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="apps.company.tests.CompanyAPITest.test_delete_company" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: apps.company.tests.CompanyAPITest.test_update_company" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="company_device_management_portal" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="apps.company.tests.CompanyAPITest.test_update_company" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="company_device_management_portal" type="Python.DjangoServer" factoryName="Django server">
+      <module name="company_device_management_portal" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -108,8 +138,8 @@
         <env name="DJANGO_SETTINGS_MODULE" value="company_device_management_portal.settings.local" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.9 (venv)" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../company_device_management_portal" />
+      <option name="SDK_NAME" value="Python 3.9 (company_device_management_portal)" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -124,7 +154,7 @@
         </ENTRIES>
       </EXTENSION>
       <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
+      <option name="port" value="8014" />
       <option name="host" value="localhost" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
@@ -134,6 +164,17 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Django Server.company_device_management_portal" />
+      <item itemvalue="Django tests.Test: apps.company.tests.CompanyAPITest.test_delete_company" />
+      <item itemvalue="Django tests.Test: apps.company.tests.CompanyAPITest.test_update_company" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Django tests.Test: apps.company.tests.CompanyAPITest.test_delete_company" />
+        <item itemvalue="Django tests.Test: apps.company.tests.CompanyAPITest.test_update_company" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -158,11 +199,20 @@
       <workItem from="1706295689849" duration="579000" />
       <workItem from="1706296315292" duration="106000" />
       <workItem from="1706301465750" duration="5620000" />
-      <workItem from="1706343145305" duration="4767000" />
+      <workItem from="1706343145305" duration="5077000" />
+      <workItem from="1706349079633" duration="580000" />
+      <workItem from="1706349875998" duration="127000" />
+      <workItem from="1706350072058" duration="113000" />
+      <workItem from="1706350283025" duration="371000" />
+      <workItem from="1706350697596" duration="15503000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/company_device_management_portal$Test__apps_company_tests_CompanyAPITest_test_update_company.coverage" NAME="Test: apps.company.tests.CompanyAPITest.test_update_company Coverage Results" MODIFIED="1706389871872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/company_device_management_portal$Test__apps_company_tests_CompanyAPITest_test_delete_company.coverage" NAME="Test: apps.company.tests.CompanyAPITest.test_delete_company Coverage Results" MODIFIED="1706389898294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
