@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'apps.company',
     'apps.employee',
     'apps.device',
+    'drf_yasg',
 ]
 SITE_ID = 1
 
@@ -48,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'company_gadget_management_portal.urls'
+ROOT_URLCONF = 'company_device_management_portal.urls'
 
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
@@ -71,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'company_gadget_management_portal.wsgi.application'
+WSGI_APPLICATION = 'company_device_management_portal.wsgi.application'
 
 AUTH_PASSWORD_VALIDATORS = [
     {

@@ -3,7 +3,7 @@ import sys
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'company_gadget_management_portal.settings.local')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'company_device_management_portal.settings.local')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
