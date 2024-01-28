@@ -9,7 +9,7 @@ from rest_framework.reverse import reverse
 
 class CompanyAPITest(APITestCase):
     def setUp(self):
-        Company.objects.create(name='Existing Company', email='existing@example.com')
+        pass
 
     def test_serializer_valid(self):
         data = {'name': 'Test Serializer', 'email': 'test@example.com'}
@@ -21,7 +21,6 @@ class CompanyAPITest(APITestCase):
         serializer = CompanySerializer(data=data)
         self.assertFalse(serializer.is_valid())
 
-        # Test with invalid email format
         data = {'name': 'Test Serializer', 'email': 'invalid_email'}
         serializer = CompanySerializer(data=data)
         self.assertFalse(serializer.is_valid())
@@ -42,10 +41,12 @@ class CompanyAPITest(APITestCase):
         company.delete()
 
     def test_list_view(self):
+        company = Company.objects.create(name='Existing Company', email='existing@example.com')
         response = self.client.get('/api/company/list/')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data), Company.objects.count())
         self.assertEqual(response.data[0]['name'], 'Existing Company')
+        company.delete()
 
     def test_retrieve_company(self):
         company = Company.objects.create(name='Retrieve Company', email='retrieve@example.com', phone='1234567890',

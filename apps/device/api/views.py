@@ -5,6 +5,10 @@ from rest_framework.response import Response
 from apps.company.utils import company_id_header_params
 from apps.device.api.serializers import DeviceSerializer, DeviceLogSerializer
 from apps.device.use_cases import AllDeviceListUseCase, AllDeviceLogListUseCase, DeviceUpdateUseCase
+from rest_framework import serializers
+
+from rest_framework import status
+from rest_framework.response import Response
 
 
 class DeviceCreate(CreateAPIView):
@@ -16,12 +20,19 @@ class DeviceCreate(CreateAPIView):
 
     def perform_create(self, serializer):
         company_id = self.request.META.get('HTTP_COMPANY')
+        print("company_id: ", company_id)
+        if company_id is None:
+            raise serializers.ValidationError({'error': 'Company ID not provided in the request header'})
+
         serializer.save(company_id=company_id)
         return Response(serializer.data)
 
     @swagger_auto_schema(tags=["Device"], manual_parameters=company_id_header_params(), request_body=DeviceSerializer)
     def post(self, request, *args, **kwargs):
-        return self.create(request, *args, **kwargs)
+        try:
+            return self.create(request, *args, **kwargs)
+        except serializers.ValidationError as e:
+            return Response(e.detail, status=status.HTTP_400_BAD_REQUEST)
 
 
 class DeviceListApiView(ListAPIView):
@@ -29,10 +40,10 @@ class DeviceListApiView(ListAPIView):
 
     def get_queryset(self):
         company_id = self.request.META.get('HTTP_COMPANY')
+        print('device company id: ', company_id)
         return AllDeviceListUseCase(company_id).execute()
 
-    # @swagger_auto_schema(tags=["Device"], manual_parameters=company_id_header_params(), request_body=DeviceSerializer)
-    @swagger_auto_schema(tags=["Device"])
+    @swagger_auto_schema(tags=["Device"], manual_parameters=company_id_header_params())
     def get(self, request, *args, **kwargs):
         return self.list(request, *args, **kwargs)
 
@@ -44,8 +55,7 @@ class DeviceRetrieveAPIView(RetrieveAPIView):
         company_id = self.request.META.get('HTTP_COMPANY')
         return AllDeviceListUseCase(company_id).execute()
 
-    # @swagger_auto_schema(tags=["Device"], manual_parameters=company_id_header_params(), request_body=DeviceSerializer)
-    @swagger_auto_schema(tags=["Device"])
+    @swagger_auto_schema(tags=["Device"], manual_parameters=company_id_header_params())
     def get(self, request, *args, **kwargs):
         return self.retrieve(request, *args, **kwargs)
 
@@ -87,6 +97,9 @@ class DeviceLogCreate(CreateAPIView):
 
     def perform_create(self, serializer):
         company_id = self.request.META.get('HTTP_COMPANY')
+        if company_id is None:
+            raise serializers.ValidationError({'error': 'Company ID not provided in the request header'})
+
         device_log = serializer.save(company_id=company_id)
         DeviceUpdateUseCase(device_log.device, {"is_available": False}).execute()
         return Response(serializer.data)
@@ -94,7 +107,10 @@ class DeviceLogCreate(CreateAPIView):
     @swagger_auto_schema(tags=["Device Log"], manual_parameters=company_id_header_params(),
                          request_body=DeviceLogSerializer)
     def post(self, request, *args, **kwargs):
-        return self.create(request, *args, **kwargs)
+        try:
+            return self.create(request, *args, **kwargs)
+        except serializers.ValidationError as e:
+            return Response(e.detail, status=status.HTTP_400_BAD_REQUEST)
 
 
 class DeviceLogListApiView(ListAPIView):
@@ -104,8 +120,7 @@ class DeviceLogListApiView(ListAPIView):
         company_id = self.request.META.get('HTTP_COMPANY')
         return AllDeviceLogListUseCase(company_id).execute()
 
-    # @swagger_auto_schema(tags=["Device"], manual_parameters=company_id_header_params(), request_body=DeviceSerializer)
-    @swagger_auto_schema(tags=["Device Log"])
+    @swagger_auto_schema(tags=["Device"], manual_parameters=company_id_header_params())
     def get(self, request, *args, **kwargs):
         return self.list(request, *args, **kwargs)
 
@@ -117,8 +132,7 @@ class DeviceLogRetrieveAPIView(RetrieveAPIView):
         company_id = self.request.META.get('HTTP_COMPANY')
         return AllDeviceLogListUseCase(company_id).execute()
 
-    # @swagger_auto_schema(tags=["Device"], manual_parameters=company_id_header_params(), request_body=DeviceSerializer)
-    @swagger_auto_schema(tags=["Device Log"])
+    @swagger_auto_schema(tags=["Device"], manual_parameters=company_id_header_params())
     def get(self, request, *args, **kwargs):
         return self.retrieve(request, *args, **kwargs)
 
