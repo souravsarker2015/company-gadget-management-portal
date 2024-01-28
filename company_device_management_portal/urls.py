@@ -26,7 +26,8 @@ urlpatterns = [
     path('api/device/', include('apps.device.api.urls')),
     path('api/employee/', include('apps.employee.api.urls')),
     path('api/payment/', include('apps.payment.api.urls')),
-
+    path('', include('apps.users.api.urls')),
+    path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 ]

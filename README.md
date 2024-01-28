@@ -27,7 +27,7 @@
 * I have included the company_id in the header, and it is also documented in Swagger because of its integral role in the interconnected structure of everything related to the company. Testing the APIs does not require any user access token or credentials.
 * Following successful testing, I implemented test cases in the test files of all the apps.
 * I updated all the admins.py files to reflect the changes.
-* 
+* I've implemented custom login, registration, and logout functionalities. Consequently, in the views, obtaining the company_id can be done using request.user.company.id when the IsAuthenticated permissions class is present. In such cases, there's no need to explicitly pass the company_id in the request header. This approach ensures a fully authenticated SAAS application. For the betterment of testing, I have intentionally omitted the permission class
 
 ### Prerequisites
 You have to Install those things to run the Project 
@@ -75,9 +75,13 @@ You should check requirements.txt from the project repository
     DATABASE_PASSWORD=''
     DATABASE_NAME=""
     SECRET_KEY=""
+    OAUTH2_PROVIDER_CLIENT_ID=''
+    OAUTH2_PROVIDER_CLIENT_SECRET=''
+    CUSTOM_AUTH_BACKEND_URL=http://localhost:8000/ or your project port
    ```
+6.  one can easily create OAUTH2_PROVIDER_CLIENT_ID and OAUTH2_PROVIDER_CLIENT_SECRET using the django-oauth-toolkit. client id and client secret is necessary for login registration.'http://localhost:8000/o/applications/register/' one can create client id and client secret.Need to select Client type=Confidential, Authorization grant type= Resource owner password-based.
 
-6. Install Necessary Packages 
+7. Install Necessary Packages 
    ```sh
    pip install -r requirements/base.txt
    ```

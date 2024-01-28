@@ -25,11 +25,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     'django.contrib.sites',
-
     'rest_framework',
-
     'apps.core',
     'apps.users',
     'apps.company',
@@ -37,6 +34,8 @@ INSTALLED_APPS = [
     'apps.device',
     'apps.payment',
     'drf_yasg',
+    'oauth2_provider',
+
 ]
 SITE_ID = 1
 
@@ -106,3 +105,20 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+}
+
+OAUTH2_PROVIDER = {
+    'ACCESS_TOKEN_EXPIRE_SECONDS': 60 * 60,
+    'OAUTH_SINGLE_ACCESS_TOKEN': True,
+    'OAUTH_DELETE_EXPIRED': True,
+    'REFRESH_TOKEN_EXPIRE_SECONDS': 60 * 60,  # Set your desired refresh token expiration time
+    'ROTATE_REFRESH_TOKEN': False,
+}
