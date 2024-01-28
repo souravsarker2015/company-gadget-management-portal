@@ -133,6 +133,11 @@ class CustomLoginView(APIView):
                     'company_id': company_id,
                 }).execute()
 
+                if user is None:
+                    user = UserDetailsUseCase({
+                        'email': username,
+                    }).execute()
+
                 if user:
                     headers = {
                         'Content-Type': 'application/x-www-form-urlencoded',

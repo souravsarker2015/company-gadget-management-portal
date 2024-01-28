@@ -1,9 +1,9 @@
 # Company Device Management Portal
 
 <div id="top"></div>
-<div align="center">
+<div>
 
-  <p align="center">
+  <p>
     The "Company Device Management Portal" is a Software as a Service (SAAS) application designed to serve multiple companies within a single platform. This application facilitates comprehensive device tracking for each company, allowing for the management of assigned devices, tracking of assignment and return times, monitoring device conditions, and providing other essential tracking solutions. The platform ensures efficient and organized management of company devices, enhancing overall operational control and accountability.
     <br />
     
@@ -27,7 +27,7 @@
 * I have included the company_id in the header, and it is also documented in Swagger because of its integral role in the interconnected structure of everything related to the company. Testing the APIs does not require any user access token or credentials.
 * Following successful testing, I implemented test cases in the test files of all the apps.
 * I updated all the admins.py files to reflect the changes.
-* I've implemented custom login, registration, and logout functionalities. Consequently, in the views, obtaining the company_id can be done using request.user.company.id when the IsAuthenticated permissions class is present. In such cases, there's no need to explicitly pass the company_id in the request header. This approach ensures a fully authenticated SAAS application. For the betterment of testing, I have intentionally omitted the permission class
+* I've implemented custom login, registration, and logout functionalities. Consequently, in the views, obtaining the company_id can be done using request.user.company.id when the IsAuthenticated permissions class is present. In such cases, there's no need to explicitly pass the company_id in the request header. This approach ensures a fully authenticated SAAS application. For the betterment of your testing, I have intentionally omitted the permission class in the other apps views.
 
 ### Prerequisites
 You have to Install those things to run the Project 
