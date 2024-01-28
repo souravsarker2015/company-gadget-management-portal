@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a9b89999-4349-4627-a286-72f5cd480241" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/users/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/users/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,67 +37,67 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Django Server.company device management portal.executor": "Run",
-    "Django Server.company gadget management portal.executor": "Run",
-    "Django Server.company_device_management_portal.executor": "Run",
-    "Django tests.Test: apps.company.tests.CompanyAPITest.test_delete_company.executor": "Run",
-    "Django tests.Test: apps.company.tests.CompanyAPITest.test_list_view.executor": "Run",
-    "Django tests.Test: apps.company.tests.CompanyAPITest.test_update_company.executor": "Run",
-    "Django tests.Test: apps.device.tests.DeviceAPITest.test_device_list_api_view.executor": "Run",
-    "Django tests.Test: apps.device.tests.DeviceAPITest.test_update_device.executor": "Run",
-    "Django tests.Test: apps.device.tests.DeviceCreateAPITest.test_delete_device.executor": "Run",
-    "Django tests.Test: apps.device.tests.DeviceCreateAPITest.test_device_list_api_view.executor": "Run",
-    "Django tests.Test: apps.device.tests.DeviceCreateAPITest.test_retrieve_device.executor": "Run",
-    "Django tests.Test: apps.device.tests.DeviceCreateAPITest.test_update_device.executor": "Run",
-    "Django tests.Test: apps.device.tests.DeviceLogAPITest.test_create_device_log.executor": "Run",
-    "Django tests.Test: apps.device.tests.DeviceLogAPITest.test_create_device_log_missing_company_header.executor": "Run",
-    "Django tests.Test: apps.device.tests.DeviceLogAPITest.test_delete_device_log.executor": "Run",
-    "Django tests.Test: apps.device.tests.DeviceLogAPITest.test_device_list_api_view.executor": "Run",
-    "Django tests.Test: apps.device.tests.DeviceLogAPITest.test_device_log_list_api_view.executor": "Run",
-    "Django tests.Test: apps.device.tests.DeviceLogAPITest.test_retrieve_device.executor": "Run",
-    "Django tests.Test: apps.device.tests.DeviceLogAPITest.test_serializer_valid.executor": "Run",
-    "Django tests.Test: apps.device.tests.DeviceLogAPITest.test_update_device_log.executor": "Run",
-    "Django tests.Test: apps.employee.tests.EmployeeAPITest.test_create_device_missing_company_header.executor": "Run",
-    "Django tests.Test: apps.employee.tests.EmployeeAPITest.test_create_employee.executor": "Run",
-    "Django tests.Test: apps.employee.tests.EmployeeAPITest.test_delete_employee.executor": "Run",
-    "Django tests.Test: apps.employee.tests.EmployeeAPITest.test_device_list_api_view.executor": "Run",
-    "Django tests.Test: apps.employee.tests.EmployeeAPITest.test_employee_list_api_view.executor": "Run",
-    "Django tests.Test: apps.employee.tests.EmployeeAPITest.test_retrieve_employee.executor": "Run",
-    "Django tests.Test: apps.employee.tests.EmployeeAPITest.test_serializer_valid.executor": "Run",
-    "Django tests.Test: apps.employee.tests.EmployeeAPITest.test_update_employee.executor": "Run",
-    "Django tests.Test: apps.payment.tests.PaymentAPITest.test_create_payment.executor": "Run",
-    "Django tests.Test: apps.payment.tests.PaymentAPITest.test_create_payment_missing_company_header.executor": "Run",
-    "Django tests.Test: apps.payment.tests.PaymentAPITest.test_delete_device_log.executor": "Run",
-    "Django tests.Test: apps.payment.tests.PaymentAPITest.test_payment_list_api_view.executor": "Run",
-    "Django tests.Test: apps.payment.tests.PaymentAPITest.test_retrieve_device_log.executor": "Run",
-    "Django tests.Test: apps.payment.tests.PaymentAPITest.test_serializer_valid.executor": "Run",
-    "Django tests.Test: apps.payment.tests.PaymentAPITest.test_update_payment.executor": "Run",
-    "Django tests.Test: apps.users.tests.UserAPITest.test_login_serializer_valid.executor": "Run",
-    "Django tests.Test: apps.users.tests.UserAPITest.test_serializer_valid.executor": "Run",
-    "Django tests.Test: apps.users.tests.UserAPITest.test_user_login.executor": "Run",
-    "Django tests.Test: apps.users.tests.UserAPITest.test_user_logout.executor": "Run",
-    "Django tests.Test: apps.users.tests.UserAPITest.test_user_registration.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/sourov/myProjects/company_device_management_portal/apps/payment",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Django Server.company device management portal.executor&quot;: &quot;Run&quot;,
+    &quot;Django Server.company gadget management portal.executor&quot;: &quot;Run&quot;,
+    &quot;Django Server.company_device_management_portal.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.company.tests.CompanyAPITest.test_delete_company.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.company.tests.CompanyAPITest.test_list_view.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.company.tests.CompanyAPITest.test_update_company.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.device.tests.DeviceAPITest.test_device_list_api_view.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.device.tests.DeviceAPITest.test_update_device.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.device.tests.DeviceCreateAPITest.test_delete_device.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.device.tests.DeviceCreateAPITest.test_device_list_api_view.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.device.tests.DeviceCreateAPITest.test_retrieve_device.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.device.tests.DeviceCreateAPITest.test_update_device.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.device.tests.DeviceLogAPITest.test_create_device_log.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.device.tests.DeviceLogAPITest.test_create_device_log_missing_company_header.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.device.tests.DeviceLogAPITest.test_delete_device_log.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.device.tests.DeviceLogAPITest.test_device_list_api_view.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.device.tests.DeviceLogAPITest.test_device_log_list_api_view.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.device.tests.DeviceLogAPITest.test_retrieve_device.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.device.tests.DeviceLogAPITest.test_serializer_valid.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.device.tests.DeviceLogAPITest.test_update_device_log.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.employee.tests.EmployeeAPITest.test_create_device_missing_company_header.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.employee.tests.EmployeeAPITest.test_create_employee.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.employee.tests.EmployeeAPITest.test_delete_employee.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.employee.tests.EmployeeAPITest.test_device_list_api_view.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.employee.tests.EmployeeAPITest.test_employee_list_api_view.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.employee.tests.EmployeeAPITest.test_retrieve_employee.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.employee.tests.EmployeeAPITest.test_serializer_valid.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.employee.tests.EmployeeAPITest.test_update_employee.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.payment.tests.PaymentAPITest.test_create_payment.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.payment.tests.PaymentAPITest.test_create_payment_missing_company_header.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.payment.tests.PaymentAPITest.test_delete_device_log.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.payment.tests.PaymentAPITest.test_payment_list_api_view.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.payment.tests.PaymentAPITest.test_retrieve_device_log.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.payment.tests.PaymentAPITest.test_serializer_valid.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.payment.tests.PaymentAPITest.test_update_payment.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.users.tests.UserAPITest.test_login_serializer_valid.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.users.tests.UserAPITest.test_serializer_valid.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.users.tests.UserAPITest.test_user_login.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.users.tests.UserAPITest.test_user_logout.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: apps.users.tests.UserAPITest.test_user_registration.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sourov/myProjects/company_device_management_portal/apps/payment&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/apps/payment" />
@@ -108,7 +107,7 @@
       <recent name="$PROJECT_DIR$/apps/company/api" />
     </key>
   </component>
-  <component name="RunManager" selected="Django tests.Test: apps.users.tests.UserAPITest.test_user_login">
+  <component name="RunManager" selected="Django Server.company_device_management_portal">
     <configuration name="Test: apps.users.tests.UserAPITest.test_login_serializer_valid" type="DjangoTestsConfigurationType" temporary="true">
       <module name="company_device_management_portal" />
       <option name="ENV_FILES" value="" />
@@ -297,7 +296,8 @@
       <workItem from="1706350072058" duration="113000" />
       <workItem from="1706350283025" duration="371000" />
       <workItem from="1706350697596" duration="17315000" />
-      <workItem from="1706392258544" duration="32778000" />
+      <workItem from="1706392258544" duration="33459000" />
+      <workItem from="1706459467424" duration="538000" />
     </task>
     <servers />
   </component>

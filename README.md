@@ -79,7 +79,7 @@ You should check requirements.txt from the project repository
     OAUTH2_PROVIDER_CLIENT_SECRET=''
     CUSTOM_AUTH_BACKEND_URL=http://localhost:8000/ or your project port
    ```
-6.  one can easily create OAUTH2_PROVIDER_CLIENT_ID and OAUTH2_PROVIDER_CLIENT_SECRET using the django-oauth-toolkit. client id and client secret is necessary for login registration.'http://localhost:8000/o/applications/register/' one can create client id and client secret.Need to select Client type=Confidential, Authorization grant type= Resource owner password-based.
+6.  one can easily create OAUTH2_PROVIDER_CLIENT_ID and OAUTH2_PROVIDER_CLIENT_SECRET using the django-oauth-toolkit for creating an Application. client id and client secret is necessary for login registration.'http://localhost:8000/o/applications/register/' one can create client id and client secret.Login required for accessing the url. Firstly login in the admin panel, then hit the url.Or one can create the application from admin panel also. Need to select Client type=Confidential, Authorization grant type= Resource owner password-based.
 
 7. Install Necessary Packages 
    ```sh
