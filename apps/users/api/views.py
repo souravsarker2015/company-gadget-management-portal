@@ -151,6 +151,7 @@ class CustomLoginView(APIView):
                         'client_id': os.environ.get('OAUTH2_PROVIDER_CLIENT_ID'),
                         'client_secret': os.environ.get('OAUTH2_PROVIDER_CLIENT_SECRET')
                     }
+                    # print(data)
                     auth_service_url = os.environ.get('CUSTOM_AUTH_BACKEND_URL')
                     auth_verify_url = f'{auth_service_url}/token2/'
 
@@ -219,6 +220,3 @@ class CustomLogoutView(APIView):
                 'error': str(e),
                 'status': status.HTTP_500_INTERNAL_SERVER_ERROR
             })
-
-
-
