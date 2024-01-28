@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a9b89999-4349-4627-a286-72f5cd480241" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/company/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/company/api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/device/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/device/api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/users/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/api/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/users/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/api/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -295,7 +291,7 @@
       <workItem from="1706350072058" duration="113000" />
       <workItem from="1706350283025" duration="371000" />
       <workItem from="1706350697596" duration="17315000" />
-      <workItem from="1706392258544" duration="29386000" />
+      <workItem from="1706392258544" duration="29886000" />
     </task>
     <servers />
   </component>

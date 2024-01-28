@@ -173,8 +173,7 @@ class CustomLoginView(APIView):
                         data = {
                             'status': status.HTTP_200_OK,
                             'access_response': res,
-                            'user_info': combined_dict,
-                            'app': request.META.get('HTTP_APP')
+                            'user': combined_dict,
                         }
 
                     else:
