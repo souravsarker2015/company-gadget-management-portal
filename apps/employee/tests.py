@@ -50,7 +50,7 @@ class EmployeeAPITest(APITestCase):
         company = Company.objects.create(name='Existing Company', email='existing@example.com')
         employee = Employee.objects.create(name='Existing Employee', company_id=company.id)
 
-        response = self.client.get('/api/employee/list/', {'HTTP_COMPANY': company.id})
+        response = self.client.get('/api/employee/list/', HTTP_COMPANY=company.id)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data), Employee.objects.count())
         self.assertEqual(response.data[0]['name'], 'Existing Employee')
