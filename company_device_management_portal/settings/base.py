@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'apps.company',
     'apps.employee',
     'apps.device',
+    'apps.payment',
     'drf_yasg',
 ]
 SITE_ID = 1

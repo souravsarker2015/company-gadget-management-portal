@@ -10,7 +10,7 @@ class AllEmployeeListUseCase:
 
     def _factory(self):
         if self._company_id:
-            self._devices = Employee.objects.filter(company_id=self._company_id).order_by('-created_at')
+            self._employees = Employee.objects.filter(company_id=self._company_id).order_by('-created_at')
         else:
             self._devices = Employee.objects.all().order_by('-created_at')
-        return self._devices
+        return self._employees
